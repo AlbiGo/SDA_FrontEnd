@@ -1,0 +1,38 @@
+.my-div
+{
+    max-width: 300px;
+    max-height: 500px;
+    min-width: 200px;
+    min-height: 300px;
+    margin: auto;
+    border: 3px solid lightblue;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px gainsboro;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.label
+{
+    margin: auto;
+    color: cornflowerblue;
+    font-size: 20px; 
+    text-align: center;
+    font-weight: 100;
+}
+
+.myInput
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.myButton
+{
+    display: inline-block;
+    background-color: greenyellow;
+}

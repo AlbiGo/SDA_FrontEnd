@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="../Styles/ContactFormStyles.css">
+        <script>
+            function submit()
+            {
+                let array = ['Fier','Tirane','Shkoder'];
+                let parent = document.getElementById("my-div");
+                let child = document.createElement("ul");
+                child.setAttribute('id','my-ul');
+                parent.appendChild(child);             
+                document.getElementById("my-ul").innerText = "Cities";
+                let parentUl = document.getElementById("my-ul");
+                let i = 1;
+                array.forEach(p =>
+                {
+                    let child = document.createElement("li");
+                    child.setAttribute('id','my-li' + i.toString());
+                    parentUl.appendChild(child);
+                    document.getElementById("my-li" + i.toString()).value = i;
+                    document.getElementById("my-li" + i.toString()).innerText = p;
+                    i++;
+                })
+            
+            debugger;
+            let child2 = document.createElement("select");
+            parent.appendChild(child2);     
+            child2.setAttribute('id','my-select');        
+            document.getElementById("my-select").innerText = "Cities";
+            document.getElementById("my-select").value = "Cities";
+            let parentSelect = document.getElementById("my-select");
+            let j = 1;
+            array.forEach(p =>
+            {
+                debugger;
+                let child = document.createElement("option");
+                parentSelect.appendChild(child);
+                child.setAttribute('id','my-option' + j.toString());        
+                document.getElementById("my-option" + j.toString()).value = j;
+                document.getElementById("my-option" + j.toString()).innerText = p;
+                j++;
+            })
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id = "my-div">
+            <button ondblclick="submit()" id = "id-button">Submit</button>
+        </div>
+    </body>
+    
+</html>

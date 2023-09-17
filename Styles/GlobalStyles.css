@@ -1,0 +1,29 @@
+.div-table
+        {
+            background-color: beige;
+            color: dodgerblue;
+       }
+
+       .myTable 
+       {
+        border: 2px solid brown;
+       }
+
+        .tr-color
+        {
+            color: red;
+        }
+
+        .th-color
+        {
+            color: blueviolet;
+        }
+        
+        #tr-id2
+        {
+            color: black;
+        }
+
+        #tr-id2:active{
+    color: green;
+        }
